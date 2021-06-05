@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    html {
+        min-height: 100%;
+    }
+
+    body {
+        background-image: linear-gradient(45deg, #f7e7bd 0%, #d9c6a5 25%, #a35d6a 50%, #c26565 75%);
+    }
+
+    h1 {
+        color: #a20a0a;
+        font-size: 40px;
+        text-align: center;
+        border: 5px solid #734046;
+        margin: 20px 10px 20px 10px;
+        padding: 5px 20px;
+        display: block;
+        font-family: fantasy;
+        border-radius: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: fantasy;
+    }
+
+    hr {
+        color: #a20a0a;
+    }
+
+    .HarryPotter {
+        display: flex;
+    }
+
+    img {
+        width: 450px;
+        line-height: 5px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    p {
+        text-align-last: center;
+        text-align: justify;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+        margin: 20px 10px 20px 10px;
+    }
+
+    span.maincharacter {
+        color: #a20a0a;
+    }
+
+    li {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+    }
+
+    a.wikipedia {
+        text-decoration: none;
+        color: #a20a0a;
+    }
+
+    button {
+        font-family: fantasy;
+        color: #ffe05d;
+        background: #bb2205;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+        box-shadow: 5px 5px 10px black;
+        display: block;
+        padding: 15px 10px;
+        margin: 20px auto;
+        border: 1px solid #bb2205;
+        font-size: 20px;
+        border-radius: 40px;
+    }
+
+    button:hover {
+        background: #ffe05d;
+        color: #bb2205;
+    }
+</style>
+
+<body>
+    <h1>
+        <strong> Harry Potter 🧙⚡️ </strong>
+        <br />
+    </h1>
+    <hr />
+    <h2>
+        <em> "I solemnly swear that I am up to no good." </em>
+    </h2>
+    <hr />
+    <div class="HarryPotter">
+        <img
+            class="hogwarts" src="hogwarts.jpg" alt="Hogwarts Houses" />
+        <p>
+            The central character in the series is
+            <span class="maincharacter">Harry Potter</span>, a boy who lives in the
+            fictional town of Little Whinging, Surrey with his aunt, uncle, and
+            cousin – the Dursleys – and discovers at the age of eleven that he is a
+            wizard, though he lives in the ordinary world of non-magical people
+            known as Muggles. The wizarding world exists parallel to the Muggle
+            world, albeit hidden and in secrecy. His magical ability is inborn, and
+            children with such abilities are invited to attend exclusive magic
+            schools that teach the necessary skills to succeed in the wizarding
+            world. Harry becomes a student at Hogwarts School of Witchcraft and
+            Wizardry, a wizarding academy in Scotland, and it is here where most of
+            the events in the series take place. As Harry develops through his
+            adolescence, he learns to overcome the problems that face him: magical,
+            social, and emotional, including ordinary teenage challenges such as
+            friendships,infatuation, romantic relationships, schoolwork and exams,
+            anxiety, depression, stress, and the greater test of preparing himself
+            for the confrontation that lies ahead in wizarding Britain's
+            increasingly-violent second wizarding war.
+        </p>
+    </div>
+    <li>
+        <a href="https://en.wikipedia.org/wiki/Harry_Potter" target="_blank" class="wikipedia">
+            Learn more on Wikipedia
+        </a>
+    </li>
+    <button> 🦉 Discover your Hogwarts house on Pottermore ✨ </button>
+    <script>
+        function houseHogwarts() {
+            let name = prompt("What's your name?");
+            let house = prompt(
+                "What house are you in? eg: Gryffindor, Slytherin, Hufflepuff, Ravenclaw"
+            );
+            if (house === "Gryffindor") {
+                alert(
+                    " Hi " + name + " Welcome to Hogwarts " + " Congratulations, you're a Gryffindor "
+                );
+            } else if (house === "Slytherin") {
+                alert(
+                    " Hi " + name + " Welcome to Hogwarts " + " Congratulations, you're a Slytherin "
+                );
+            } else if (house === "Hufflepuff") {
+                alert(
+                    " Hi " + name + " Welcome to Hogwarts " + " Congratulations, you're a Hufflepuff"
+                );
+            } else if (house === "Ravenclaw") {
+                alert(
+                    " Hi " + name + " Welcome to Hogwarts " + " Congratulations, you're a Ravenclaw"
+                );
+            }
+        }
+        let discoverYourHogwartsHouseOnPottermore = document.querySelector(
+            "button"
+        );
+        discoverYourHogwartsHouseOnPottermore.addEventListener(
+            "click",
+            houseHogwarts
+        );
+    </script>
+</body>
+
+</html>
