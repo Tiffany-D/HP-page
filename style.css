@@ -2,29 +2,17 @@
         min-height: 100%;
     }
 
-    body {
-        background-image: linear-gradient(45deg, #f7e7bd 0%, #d9c6a5 25%, #a35d6a 50%, #c26565 75%);
-    }
-
     h1 {
-        color: #a20a0a;
+        color: #fecd51;
         font-size: 40px;
-        text-align: center;
-        border: 5px solid #734046;
-        margin: 20px 10px 20px 10px;
         padding: 5px 20px;
-        display: block;
         font-family: fantasy;
-        border-radius: 20px;
     }
 
     h2 {
-        text-align: center;
+        color: #ffe9e3;
         font-family: fantasy;
-    }
-
-    hr {
-        color: #a20a0a;
+        font-size: 25px;
     }
 
     .HarryPotter {
@@ -35,10 +23,12 @@
         width: 450px;
         line-height: 5px;
         display: block;
-        margin: 0 auto;
+        margin: 10px;
+        border-radius: 5px;
     }
 
     p {
+        color: #ffe9e3;
         text-align-last: center;
         text-align: justify;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
@@ -47,12 +37,13 @@
     }
 
     span.maincharacter {
-        color: #a20a0a;
+        color: #8dc6ff;
     }
 
     li {
         list-style: none;
         padding: 0;
+        margin: 10px;
         text-align: left;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
             sans-serif;
@@ -60,25 +51,24 @@
 
     a.wikipedia {
         text-decoration: none;
-        color: #a20a0a;
+        color: #fecd51;
     }
 
     button {
-        font-family: fantasy;
-        color: #ffe05d;
-        background: #bb2205;
-        cursor: pointer;
-        transition: all 200ms ease-in-out;
-        box-shadow: 5px 5px 10px black;
-        display: block;
-        padding: 15px 10px;
-        margin: 20px auto;
-        border: 1px solid #bb2205;
-        font-size: 20px;
-        border-radius: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+    color: #fecd51;
+    background: #3b50b2;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    box-shadow: 5px 5px 10px black;
+    padding: 15px 10px;
+    border: 1px solid #3b50b2;
+    font-size: 20px;
+    border-radius: 15rem;
     }
 
     button:hover {
-        background: #ffe05d;
+        background: #fecd51;
         color: #bb2205;
     }
