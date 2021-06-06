@@ -29,6 +29,7 @@
 
     p {
         color: #ffe9e3;
+        font-size: 15px;
         text-align-last: center;
         text-align: justify;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
@@ -50,6 +51,7 @@
     }
 
     a.wikipedia {
+        text-align: left;
         text-decoration: none;
         color: #fecd51;
     }
@@ -72,3 +74,29 @@
         background: #fecd51;
         color: #bb2205;
     }
+
+@media(max-width: 576px){
+    h1,h2{
+        text-align: center;
+    }
+    img{
+        width: 300px;
+        height: 200px;
+        margin-left: 38px;
+        
+    }
+    p{
+        font-size: 10px;
+        text-align: center;
+
+    }
+    .HarryPotter{
+        display: flex;
+        flex-direction: column;
+    }
+    a{
+        display: auto;
+        margin: 0 auto;
+    }
+  
+}
